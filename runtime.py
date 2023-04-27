@@ -27,7 +27,7 @@ while True:
     else:
         request_info = json.loads(data)
         print("handling request:", request_info)
-        url = "http://162.105.146.175:8000/stable_diffusion_v1"
+        url = "http://127.0.0.1:8000/stable_diffusion_v1" # localhost service
         payload = json.dumps({
         "prompt": request_info["prompt"],
         "H": request_info["H"],
